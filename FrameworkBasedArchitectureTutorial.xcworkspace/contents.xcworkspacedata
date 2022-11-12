@@ -7,5 +7,8 @@
    <Group
       location = "container:"
       name = "Common">
+      <FileRef
+         location = "group:Common/Infrastructure/Infrastructure.xcodeproj">
+      </FileRef>
    </Group>
 </Workspace>
