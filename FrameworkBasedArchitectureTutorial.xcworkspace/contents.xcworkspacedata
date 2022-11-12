@@ -10,5 +10,8 @@
       <FileRef
          location = "group:Common/Infrastructure/Infrastructure.xcodeproj">
       </FileRef>
+      <FileRef
+         location = "group:Common/Domain/Domain.xcodeproj">
+      </FileRef>
    </Group>
 </Workspace>
