@@ -17,4 +17,8 @@
          location = "group:Common/Presentation/Presentation.xcodeproj">
       </FileRef>
    </Group>
+   <Group
+      location = "container:"
+      name = "Modules">
+   </Group>
 </Workspace>
