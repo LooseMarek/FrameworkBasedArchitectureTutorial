@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  WorkoutLogs
+
+  Created by Marek Loose on 26/11/2022.
+  
+*/
+
+"workout_logs.title" = "Workout Logs Demo!!!";
+"workout_logs.log.date" = "Date: %@";
+"workout_logs.log.goal_duration" = "Goal Duration: %@min";
+"workout_logs.log.actual_duration" = "Actual Duration: %@min";

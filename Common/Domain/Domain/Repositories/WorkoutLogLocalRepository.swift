@@ -8,17 +8,17 @@
 import Foundation
 import Infrastructure
 
-protocol WorkoutLogLocalRepositoryProtocol {
+public protocol WorkoutLogLocalRepositoryProtocol {
     
     func getAll() -> [WorkoutLog]
     
 }
 
-final class WorkoutLogLocalRepository {
+public final class WorkoutLogLocalRepository {
     
     let jsonService: JsonServiceProtocol
     
-    init(jsonService: JsonServiceProtocol) {
+    public init(jsonService: JsonServiceProtocol = JsonService()) {
         self.jsonService = jsonService
     }
     
@@ -26,7 +26,7 @@ final class WorkoutLogLocalRepository {
 
 extension WorkoutLogLocalRepository: WorkoutLogLocalRepositoryProtocol {
     
-    func getAll() -> [WorkoutLog] {
+    public func getAll() -> [WorkoutLog] {
         guard let data = jsonService.loadData(from: "MockWorkoutLogs", in: Bundle(for: type(of: self))) else { return [] }
         
         do {

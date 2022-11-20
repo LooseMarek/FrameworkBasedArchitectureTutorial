@@ -9,20 +9,34 @@
 /* Begin PBXBuildFile section */
 		4CBA6B65FF0C7502BE9BB8DB /* Pods_WorkoutLogsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E9053D9E7B34E082F2B61 /* Pods_WorkoutLogsDemo.framework */; };
 		9699E9DD47C2176DF03A5AAE /* Pods_WorkoutLogsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F8ED0B9B4B739F9508A05CF /* Pods_WorkoutLogsTests.framework */; };
+		9D15AEF1292A955600400444 /* WorkoutLogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15AEF0292A955600400444 /* WorkoutLogsViewController.swift */; };
+		9D15AEF7292A95DD00400444 /* WorkoutLogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15AEF6292A95DD00400444 /* WorkoutLogsViewModel.swift */; };
+		9D15AEFC292A983300400444 /* WorkoutLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15AEFB292A983300400444 /* WorkoutLogViewModel.swift */; };
+		9D15AF0A292AA74000400444 /* WorkoutLogs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8747EE292A539000E994D8 /* WorkoutLogs.framework */; };
+		9D15AF0B292AA74000400444 /* WorkoutLogs.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8747EE292A539000E994D8 /* WorkoutLogs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9D15AF11292AAC6000400444 /* WorkoutLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15AF10292AAC6000400444 /* WorkoutLogCell.swift */; };
+		9D15AF16292AC49100400444 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D15AF15292AC49000400444 /* Domain.framework */; };
+		9D15AF17292AC49100400444 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D15AF15292AC49000400444 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D8747F7292A539000E994D8 /* WorkoutLogs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8747EE292A539000E994D8 /* WorkoutLogs.framework */; };
 		9D8747FC292A539000E994D8 /* WorkoutLogsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8747FB292A539000E994D8 /* WorkoutLogsTests.swift */; };
-		9D8747FD292A539000E994D8 /* WorkoutLogs.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D8747F1292A539000E994D8 /* WorkoutLogs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D87480D292A53F600E994D8 /* WorkoutLogsSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D87480C292A53F600E994D8 /* WorkoutLogsSnapshotTests.swift */; };
 		9D87480E292A53F600E994D8 /* WorkoutLogs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8747EE292A539000E994D8 /* WorkoutLogs.framework */; };
 		9D87481B292A54C100E994D8 /* WorkoutLogsDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D87481A292A54C100E994D8 /* WorkoutLogsDemoApp.swift */; };
-		9D87481D292A54C100E994D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D87481C292A54C100E994D8 /* ContentView.swift */; };
 		9D87481F292A54C200E994D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D87481E292A54C200E994D8 /* Assets.xcassets */; };
 		9D874823292A54C200E994D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D874822292A54C200E994D8 /* Preview Assets.xcassets */; };
+		9DA4789529323E7600082FD1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9DA4789729323E7600082FD1 /* Localizable.strings */; };
 		A1E66FB7C22C7B192A14FD1A /* Pods_WorkoutLogs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10DE6CAE8C419AAA6B744435 /* Pods_WorkoutLogs.framework */; };
 		DCBA97D63CC45D113C5513EB /* Pods_WorkoutLogsSnapshotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96AD187F1F6ACCA3E902E6FB /* Pods_WorkoutLogsSnapshotTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9D15AF0C292AA74000400444 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D8747E5292A539000E994D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D8747ED292A539000E994D8;
+			remoteInfo = WorkoutLogs;
+		};
 		9D8747F8292A539000E994D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9D8747E5292A539000E994D8 /* Project object */;
@@ -39,6 +53,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9D15AF0E292AA74100400444 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9D15AF0B292AA74000400444 /* WorkoutLogs.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D15AF18292AC49100400444 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9D15AF17292AC49100400444 /* Domain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		10DE6CAE8C419AAA6B744435 /* Pods_WorkoutLogs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkoutLogs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		111E9053D9E7B34E082F2B61 /* Pods_WorkoutLogsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkoutLogsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,18 +87,22 @@
 		4C065AD5594313DF6D9444D3 /* Pods-WorkoutLogsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutLogsTests.debug.xcconfig"; path = "Target Support Files/Pods-WorkoutLogsTests/Pods-WorkoutLogsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F8ED0B9B4B739F9508A05CF /* Pods_WorkoutLogsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkoutLogsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96AD187F1F6ACCA3E902E6FB /* Pods_WorkoutLogsSnapshotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkoutLogsSnapshotTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D15AEF0292A955600400444 /* WorkoutLogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogsViewController.swift; sourceTree = "<group>"; };
+		9D15AEF6292A95DD00400444 /* WorkoutLogsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogsViewModel.swift; sourceTree = "<group>"; };
+		9D15AEFB292A983300400444 /* WorkoutLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogViewModel.swift; sourceTree = "<group>"; };
+		9D15AF10292AAC6000400444 /* WorkoutLogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogCell.swift; sourceTree = "<group>"; };
+		9D15AF12292AC47500400444 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D15AF15292AC49000400444 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8747EE292A539000E994D8 /* WorkoutLogs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WorkoutLogs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D8747F1292A539000E994D8 /* WorkoutLogs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorkoutLogs.h; sourceTree = "<group>"; };
 		9D8747F6292A539000E994D8 /* WorkoutLogsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkoutLogsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8747FB292A539000E994D8 /* WorkoutLogsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogsTests.swift; sourceTree = "<group>"; };
 		9D87480A292A53F600E994D8 /* WorkoutLogsSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkoutLogsSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D87480C292A53F600E994D8 /* WorkoutLogsSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogsSnapshotTests.swift; sourceTree = "<group>"; };
 		9D874818292A54C100E994D8 /* WorkoutLogsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutLogsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D87481A292A54C100E994D8 /* WorkoutLogsDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogsDemoApp.swift; sourceTree = "<group>"; };
-		9D87481C292A54C100E994D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D87481E292A54C200E994D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9D874820292A54C200E994D8 /* WorkoutLogsDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WorkoutLogsDemo.entitlements; sourceTree = "<group>"; };
 		9D874822292A54C200E994D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9DA4789629323E7600082FD1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B15D4067A2181E9EBDFBF0B2 /* Pods-WorkoutLogsSnapshotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutLogsSnapshotTests.release.xcconfig"; path = "Target Support Files/Pods-WorkoutLogsSnapshotTests/Pods-WorkoutLogsSnapshotTests.release.xcconfig"; sourceTree = "<group>"; };
 		DE944A165DCEDD7CC5F3AEB8 /* Pods-WorkoutLogs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutLogs.debug.xcconfig"; path = "Target Support Files/Pods-WorkoutLogs/Pods-WorkoutLogs.debug.xcconfig"; sourceTree = "<group>"; };
 		FA2349AC436AC1454AD33B21 /* Pods-WorkoutLogsSnapshotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutLogsSnapshotTests.debug.xcconfig"; path = "Target Support Files/Pods-WorkoutLogsSnapshotTests/Pods-WorkoutLogsSnapshotTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D15AF16292AC49100400444 /* Domain.framework in Frameworks */,
 				A1E66FB7C22C7B192A14FD1A /* Pods_WorkoutLogs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CBA6B65FF0C7502BE9BB8DB /* Pods_WorkoutLogsDemo.framework in Frameworks */,
+				9D15AF0A292AA74000400444 /* WorkoutLogs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,12 +168,49 @@
 		99A0A9AAB88E0A7A9ED44FC7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D15AF15292AC49000400444 /* Domain.framework */,
+				9D15AF12292AC47500400444 /* Domain.framework */,
 				10DE6CAE8C419AAA6B744435 /* Pods_WorkoutLogs.framework */,
 				111E9053D9E7B34E082F2B61 /* Pods_WorkoutLogsDemo.framework */,
 				96AD187F1F6ACCA3E902E6FB /* Pods_WorkoutLogsSnapshotTests.framework */,
 				5F8ED0B9B4B739F9508A05CF /* Pods_WorkoutLogsTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D15AEED292A946700400444 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				9D15AF0F292AAC4E00400444 /* Views */,
+				9D15AEEE292A94DC00400444 /* Scenes */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		9D15AEEE292A94DC00400444 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9D15AEEF292A951900400444 /* WorkoutLogs */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9D15AEEF292A951900400444 /* WorkoutLogs */ = {
+			isa = PBXGroup;
+			children = (
+				9D15AEF0292A955600400444 /* WorkoutLogsViewController.swift */,
+				9D15AEF6292A95DD00400444 /* WorkoutLogsViewModel.swift */,
+				9D15AEFB292A983300400444 /* WorkoutLogViewModel.swift */,
+			);
+			path = WorkoutLogs;
+			sourceTree = "<group>";
+		};
+		9D15AF0F292AAC4E00400444 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D15AF10292AAC6000400444 /* WorkoutLogCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		9D8747E4292A539000E994D8 = {
@@ -158,7 +240,7 @@
 		9D8747F0292A539000E994D8 /* WorkoutLogs */ = {
 			isa = PBXGroup;
 			children = (
-				9D8747F1292A539000E994D8 /* WorkoutLogs.h */,
+				9D15AEED292A946700400444 /* Presentation */,
 			);
 			path = WorkoutLogs;
 			sourceTree = "<group>";
@@ -182,11 +264,8 @@
 		9D874819292A54C100E994D8 /* WorkoutLogsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9D8BED1C29324B2F00B00CBE /* Resources */,
 				9D87481A292A54C100E994D8 /* WorkoutLogsDemoApp.swift */,
-				9D87481C292A54C100E994D8 /* ContentView.swift */,
-				9D87481E292A54C200E994D8 /* Assets.xcassets */,
-				9D874820292A54C200E994D8 /* WorkoutLogsDemo.entitlements */,
-				9D874821292A54C200E994D8 /* Preview Content */,
 			);
 			path = WorkoutLogsDemo;
 			sourceTree = "<group>";
@@ -199,6 +278,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9D8BED1C29324B2F00B00CBE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9D874821292A54C200E994D8 /* Preview Content */,
+				9D87481E292A54C200E994D8 /* Assets.xcassets */,
+				9DA4789729323E7600082FD1 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -206,7 +295,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D8747FD292A539000E994D8 /* WorkoutLogs.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,12 +310,15 @@
 				9D8747EA292A539000E994D8 /* Sources */,
 				9D8747EB292A539000E994D8 /* Frameworks */,
 				9D8747EC292A539000E994D8 /* Resources */,
+				9D15AF18292AC49100400444 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = WorkoutLogs;
+			packageProductDependencies = (
+			);
 			productName = WorkoutLogs;
 			productReference = 9D8747EE292A539000E994D8 /* WorkoutLogs.framework */;
 			productType = "com.apple.product-type.framework";
@@ -279,10 +370,12 @@
 				9D874814292A54C100E994D8 /* Sources */,
 				9D874815292A54C100E994D8 /* Frameworks */,
 				9D874816292A54C100E994D8 /* Resources */,
+				9D15AF0E292AA74100400444 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9D15AF0D292AA74000400444 /* PBXTargetDependency */,
 			);
 			name = WorkoutLogsDemo;
 			productName = WorkoutLogsDemo;
@@ -301,6 +394,7 @@
 				TargetAttributes = {
 					9D8747ED292A539000E994D8 = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 					};
 					9D8747F5292A539000E994D8 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -322,6 +416,8 @@
 				Base,
 			);
 			mainGroup = 9D8747E4292A539000E994D8;
+			packageReferences = (
+			);
 			productRefGroup = 9D8747EF292A539000E994D8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -361,6 +457,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D874823292A54C200E994D8 /* Preview Assets.xcassets in Resources */,
+				9DA4789529323E7600082FD1 /* Localizable.strings in Resources */,
 				9D87481F292A54C200E994D8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,6 +577,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D15AEF1292A955600400444 /* WorkoutLogsViewController.swift in Sources */,
+				9D15AEF7292A95DD00400444 /* WorkoutLogsViewModel.swift in Sources */,
+				9D15AF11292AAC6000400444 /* WorkoutLogCell.swift in Sources */,
+				9D15AEFC292A983300400444 /* WorkoutLogViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,7 +604,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D87481D292A54C100E994D8 /* ContentView.swift in Sources */,
 				9D87481B292A54C100E994D8 /* WorkoutLogsDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +611,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9D15AF0D292AA74000400444 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D8747ED292A539000E994D8 /* WorkoutLogs */;
+			targetProxy = 9D15AF0C292AA74000400444 /* PBXContainerItemProxy */;
+		};
 		9D8747F9292A539000E994D8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9D8747ED292A539000E994D8 /* WorkoutLogs */;
@@ -522,6 +627,17 @@
 			targetProxy = 9D87480F292A53F600E994D8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9DA4789729323E7600082FD1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DA4789629323E7600082FD1 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9D8747FE292A539000E994D8 /* Debug */ = {
@@ -648,6 +764,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DE944A165DCEDD7CC5F3AEB8 /* Pods-WorkoutLogs.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -668,6 +785,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -677,6 +795,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3CEBBAB96E0E343C02396E81 /* Pods-WorkoutLogs.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -706,6 +825,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4C065AD5594313DF6D9444D3 /* Pods-WorkoutLogsTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9JVYUSJU3D;
@@ -723,6 +843,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 408236376ED6CA4DB1D704B1 /* Pods-WorkoutLogsTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9JVYUSJU3D;
@@ -740,6 +861,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA2349AC436AC1454AD33B21 /* Pods-WorkoutLogsSnapshotTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9JVYUSJU3D;
@@ -757,6 +879,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B15D4067A2181E9EBDFBF0B2 /* Pods-WorkoutLogsSnapshotTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9JVYUSJU3D;
@@ -776,10 +899,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WorkoutLogsDemo/WorkoutLogsDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WorkoutLogsDemo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "WorkoutLogsDemo/Resources/Preview\\ Content/Preview\\ Assets.xcassets";
 				DEVELOPMENT_TEAM = 9JVYUSJU3D;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -815,10 +937,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WorkoutLogsDemo/WorkoutLogsDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WorkoutLogsDemo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "WorkoutLogsDemo/Resources/Preview\\ Content/Preview\\ Assets.xcassets";
 				DEVELOPMENT_TEAM = 9JVYUSJU3D;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;

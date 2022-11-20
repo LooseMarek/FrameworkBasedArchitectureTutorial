@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct WorkoutLog: Decodable {
+public struct WorkoutLog: Decodable {
     
-    var goalDuration: Int
-    var actualDuration: Int
-    var timestamp: Int
+    public var goalDuration: Int
+    public var actualDuration: Int
+    public var timestamp: Int
     
 }

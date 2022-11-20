@@ -10,12 +10,14 @@
 		723E38169C7019B47C0CB878 /* Pods_ApplicationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF52B206B6410CE6419C9FD /* Pods_ApplicationTests.framework */; };
 		8E37F4A23B08A39B08B86E15 /* Pods_Application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74D012C363A4485DF1D23C8 /* Pods_Application.framework */; };
 		9D3B9E08291EBA7400D71B30 /* ApplicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3B9E07291EBA7400D71B30 /* ApplicationApp.swift */; };
-		9D3B9E0A291EBA7400D71B30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3B9E09291EBA7400D71B30 /* ContentView.swift */; };
 		9D3B9E0C291EBA7600D71B30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3B9E0B291EBA7600D71B30 /* Assets.xcassets */; };
 		9D3B9E0F291EBA7600D71B30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3B9E0E291EBA7600D71B30 /* Preview Assets.xcassets */; };
 		9D3B9E19291EBA7700D71B30 /* ApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3B9E18291EBA7700D71B30 /* ApplicationTests.swift */; };
 		9D3B9E23291EBA7700D71B30 /* ApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3B9E22291EBA7700D71B30 /* ApplicationUITests.swift */; };
 		9D3B9E25291EBA7700D71B30 /* ApplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3B9E24291EBA7700D71B30 /* ApplicationUITestsLaunchTests.swift */; };
+		9D416A402932501B00164219 /* WorkoutLogs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D416A3F2932501B00164219 /* WorkoutLogs.framework */; };
+		9D416A412932501B00164219 /* WorkoutLogs.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D416A3F2932501B00164219 /* WorkoutLogs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9DA4789A2932406300082FD1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9DA4789C2932406300082FD1 /* Localizable.strings */; };
 		D0E33DB7AC6F07761C3CDC25 /* Pods_ApplicationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2913061BB2CF26D84D3E0DB /* Pods_ApplicationUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9D416A422932501B00164219 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9D416A412932501B00164219 /* WorkoutLogs.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		032BDA13DADFE71386F1DD11 /* Pods-ApplicationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplicationUITests.debug.xcconfig"; path = "Target Support Files/Pods-ApplicationUITests/Pods-ApplicationUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1D7F8FA497BDB9149E10E6C1 /* Pods-ApplicationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplicationTests.release.xcconfig"; path = "Target Support Files/Pods-ApplicationTests/Pods-ApplicationTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -43,7 +59,6 @@
 		478AAC0E80EC2583F03E5054 /* Pods-Application.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Application.debug.xcconfig"; path = "Target Support Files/Pods-Application/Pods-Application.debug.xcconfig"; sourceTree = "<group>"; };
 		9D3B9E04291EBA7400D71B30 /* Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3B9E07291EBA7400D71B30 /* ApplicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationApp.swift; sourceTree = "<group>"; };
-		9D3B9E09291EBA7400D71B30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D3B9E0B291EBA7600D71B30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D3B9E0E291EBA7600D71B30 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D3B9E14291EBA7700D71B30 /* ApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +66,8 @@
 		9D3B9E1E291EBA7700D71B30 /* ApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3B9E22291EBA7700D71B30 /* ApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationUITests.swift; sourceTree = "<group>"; };
 		9D3B9E24291EBA7700D71B30 /* ApplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9D416A3F2932501B00164219 /* WorkoutLogs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WorkoutLogs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA4789B2932406300082FD1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A74D012C363A4485DF1D23C8 /* Pods_Application.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Application.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE86A06868F1B306D799DBE /* Pods-ApplicationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplicationUITests.release.xcconfig"; path = "Target Support Files/Pods-ApplicationUITests/Pods-ApplicationUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DB7404A9663655AE93895D6C /* Pods-ApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplicationTests.debug.xcconfig"; path = "Target Support Files/Pods-ApplicationTests/Pods-ApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -64,6 +81,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E37F4A23B08A39B08B86E15 /* Pods_Application.framework in Frameworks */,
+				9D416A402932501B00164219 /* WorkoutLogs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,10 +143,8 @@
 		9D3B9E06291EBA7400D71B30 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				9D8BED1B29324B0500B00CBE /* Resources */,
 				9D3B9E07291EBA7400D71B30 /* ApplicationApp.swift */,
-				9D3B9E09291EBA7400D71B30 /* ContentView.swift */,
-				9D3B9E0B291EBA7600D71B30 /* Assets.xcassets */,
-				9D3B9E0D291EBA7600D71B30 /* Preview Content */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -158,9 +174,20 @@
 			path = ApplicationUITests;
 			sourceTree = "<group>";
 		};
+		9D8BED1B29324B0500B00CBE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9D3B9E0D291EBA7600D71B30 /* Preview Content */,
+				9D3B9E0B291EBA7600D71B30 /* Assets.xcassets */,
+				9DA4789C2932406300082FD1 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		B810A21EEF15F384C200A846 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D416A3F2932501B00164219 /* WorkoutLogs.framework */,
 				A74D012C363A4485DF1D23C8 /* Pods_Application.framework */,
 				1FF52B206B6410CE6419C9FD /* Pods_ApplicationTests.framework */,
 				E2913061BB2CF26D84D3E0DB /* Pods_ApplicationUITests.framework */,
@@ -179,6 +206,7 @@
 				9D3B9E00291EBA7400D71B30 /* Sources */,
 				9D3B9E01291EBA7400D71B30 /* Frameworks */,
 				9D3B9E02291EBA7400D71B30 /* Resources */,
+				9D416A422932501B00164219 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -276,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D3B9E0F291EBA7600D71B30 /* Preview Assets.xcassets in Resources */,
+				9DA4789A2932406300082FD1 /* Localizable.strings in Resources */,
 				9D3B9E0C291EBA7600D71B30 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,7 +399,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D3B9E0A291EBA7400D71B30 /* ContentView.swift in Sources */,
 				9D3B9E08291EBA7400D71B30 /* ApplicationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +434,17 @@
 			targetProxy = 9D3B9E1F291EBA7700D71B30 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9DA4789C2932406300082FD1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DA4789B2932406300082FD1 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9D3B9E26291EBA7700D71B30 /* Debug */ = {
@@ -530,7 +569,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Application/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "Application/Resources/Preview\\ Content/Preview\\ Assets.xcassets";
 				DEVELOPMENT_TEAM = 9JVYUSJU3D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -560,7 +599,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Application/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "Application/Resources/Preview\\ Content/Preview\\ Assets.xcassets";
 				DEVELOPMENT_TEAM = 9JVYUSJU3D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

@@ -6,12 +6,20 @@
 //
 
 import SwiftUI
+import WorkoutLogs
 
 @main
 struct WorkoutLogsDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WorkoutLogsView()
         }
     }
 }
+
+struct WorkoutLogsDemoApp_Previews: PreviewProvider {
+    static var previews: some View {
+        WorkoutLogsView()
+    }
+}
+

@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  Application
+
+  Created by Marek Loose on 26/11/2022.
+  
+*/
+
+// === MODULES ===
+
+// WorkoutLogs
+
+"workout_logs.title" = "Workout Logs";
+"workout_logs.log.date" = "Date: %@";
+"workout_logs.log.goal_duration" = "Goal Duration: %@min";
+"workout_logs.log.actual_duration" = "Actual Duration: %@min";
