@@ -1,0 +1,6 @@
+framework module Pods_WorkoutLogsDemo {
+  umbrella header "Pods-WorkoutLogsDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

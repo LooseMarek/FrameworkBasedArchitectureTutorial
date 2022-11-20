@@ -27,4 +27,7 @@
          location = "group:Modules/WorkoutDetails/WorkoutDetails.xcodeproj">
       </FileRef>
    </Group>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
 </Workspace>
