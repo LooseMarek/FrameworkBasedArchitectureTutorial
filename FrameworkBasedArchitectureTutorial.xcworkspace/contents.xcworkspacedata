@@ -23,5 +23,8 @@
       <FileRef
          location = "group:Modules/WorkoutLogs/WorkoutLogs.xcodeproj">
       </FileRef>
+      <FileRef
+         location = "group:Modules/WorkoutDetails/WorkoutDetails.xcodeproj">
+      </FileRef>
    </Group>
 </Workspace>
