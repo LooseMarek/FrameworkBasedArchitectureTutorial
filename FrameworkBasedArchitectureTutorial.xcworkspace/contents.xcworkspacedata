@@ -20,5 +20,8 @@
    <Group
       location = "container:"
       name = "Modules">
+      <FileRef
+         location = "group:Modules/WorkoutLogs/WorkoutLogs.xcodeproj">
+      </FileRef>
    </Group>
 </Workspace>
