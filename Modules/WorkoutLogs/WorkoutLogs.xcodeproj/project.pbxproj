@@ -12,6 +12,10 @@
 		9D8747FD292A539000E994D8 /* WorkoutLogs.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D8747F1292A539000E994D8 /* WorkoutLogs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D87480D292A53F600E994D8 /* WorkoutLogsSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D87480C292A53F600E994D8 /* WorkoutLogsSnapshotTests.swift */; };
 		9D87480E292A53F600E994D8 /* WorkoutLogs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8747EE292A539000E994D8 /* WorkoutLogs.framework */; };
+		9D87481B292A54C100E994D8 /* WorkoutLogsDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D87481A292A54C100E994D8 /* WorkoutLogsDemoApp.swift */; };
+		9D87481D292A54C100E994D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D87481C292A54C100E994D8 /* ContentView.swift */; };
+		9D87481F292A54C200E994D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D87481E292A54C200E994D8 /* Assets.xcassets */; };
+		9D874823292A54C200E994D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D874822292A54C200E994D8 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,12 @@
 		9D8747FB292A539000E994D8 /* WorkoutLogsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogsTests.swift; sourceTree = "<group>"; };
 		9D87480A292A53F600E994D8 /* WorkoutLogsSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkoutLogsSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D87480C292A53F600E994D8 /* WorkoutLogsSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogsSnapshotTests.swift; sourceTree = "<group>"; };
+		9D874818292A54C100E994D8 /* WorkoutLogsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutLogsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D87481A292A54C100E994D8 /* WorkoutLogsDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogsDemoApp.swift; sourceTree = "<group>"; };
+		9D87481C292A54C100E994D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9D87481E292A54C200E994D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D874820292A54C200E994D8 /* WorkoutLogsDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WorkoutLogsDemo.entitlements; sourceTree = "<group>"; };
+		9D874822292A54C200E994D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +74,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9D874815292A54C100E994D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -71,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				9D8747F0292A539000E994D8 /* WorkoutLogs */,
+				9D874819292A54C100E994D8 /* WorkoutLogsDemo */,
 				9D8747FA292A539000E994D8 /* WorkoutLogsTests */,
 				9D87480B292A53F600E994D8 /* WorkoutLogsSnapshotTests */,
 				9D8747EF292A539000E994D8 /* Products */,
@@ -83,6 +101,7 @@
 				9D8747EE292A539000E994D8 /* WorkoutLogs.framework */,
 				9D8747F6292A539000E994D8 /* WorkoutLogsTests.xctest */,
 				9D87480A292A53F600E994D8 /* WorkoutLogsSnapshotTests.xctest */,
+				9D874818292A54C100E994D8 /* WorkoutLogsDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +128,26 @@
 				9D87480C292A53F600E994D8 /* WorkoutLogsSnapshotTests.swift */,
 			);
 			path = WorkoutLogsSnapshotTests;
+			sourceTree = "<group>";
+		};
+		9D874819292A54C100E994D8 /* WorkoutLogsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9D87481A292A54C100E994D8 /* WorkoutLogsDemoApp.swift */,
+				9D87481C292A54C100E994D8 /* ContentView.swift */,
+				9D87481E292A54C200E994D8 /* Assets.xcassets */,
+				9D874820292A54C200E994D8 /* WorkoutLogsDemo.entitlements */,
+				9D874821292A54C200E994D8 /* Preview Content */,
+			);
+			path = WorkoutLogsDemo;
+			sourceTree = "<group>";
+		};
+		9D874821292A54C200E994D8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9D874822292A54C200E994D8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +218,23 @@
 			productReference = 9D87480A292A53F600E994D8 /* WorkoutLogsSnapshotTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		9D874817292A54C100E994D8 /* WorkoutLogsDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D874824292A54C200E994D8 /* Build configuration list for PBXNativeTarget "WorkoutLogsDemo" */;
+			buildPhases = (
+				9D874814292A54C100E994D8 /* Sources */,
+				9D874815292A54C100E994D8 /* Frameworks */,
+				9D874816292A54C100E994D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WorkoutLogsDemo;
+			productName = WorkoutLogsDemo;
+			productReference = 9D874818292A54C100E994D8 /* WorkoutLogsDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,6 +254,9 @@
 					9D874809292A53F600E994D8 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
+					9D874817292A54C100E994D8 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
 				};
 			};
 			buildConfigurationList = 9D8747E8292A539000E994D8 /* Build configuration list for PBXProject "WorkoutLogs" */;
@@ -214,6 +273,7 @@
 			projectRoot = "";
 			targets = (
 				9D8747ED292A539000E994D8 /* WorkoutLogs */,
+				9D874817292A54C100E994D8 /* WorkoutLogsDemo */,
 				9D8747F5292A539000E994D8 /* WorkoutLogsTests */,
 				9D874809292A53F600E994D8 /* WorkoutLogsSnapshotTests */,
 			);
@@ -242,6 +302,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9D874816292A54C100E994D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D874823292A54C200E994D8 /* Preview Assets.xcassets in Resources */,
+				9D87481F292A54C200E994D8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -265,6 +334,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D87480D292A53F600E994D8 /* WorkoutLogsSnapshotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D874814292A54C100E994D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D87481D292A54C100E994D8 /* ContentView.swift in Sources */,
+				9D87481B292A54C100E994D8 /* WorkoutLogsDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +602,82 @@
 			};
 			name = Release;
 		};
+		9D874825292A54C200E994D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WorkoutLogsDemo/WorkoutLogsDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WorkoutLogsDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 9JVYUSJU3D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marekloose.WorkoutLogsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D874826292A54C200E994D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WorkoutLogsDemo/WorkoutLogsDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WorkoutLogsDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 9JVYUSJU3D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marekloose.WorkoutLogsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -559,6 +713,15 @@
 			buildConfigurations = (
 				9D874812292A53F600E994D8 /* Debug */,
 				9D874813292A53F600E994D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D874824292A54C200E994D8 /* Build configuration list for PBXNativeTarget "WorkoutLogsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D874825292A54C200E994D8 /* Debug */,
+				9D874826292A54C200E994D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
