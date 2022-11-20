@@ -10,10 +10,19 @@
 		9D8747F7292A539000E994D8 /* WorkoutLogs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8747EE292A539000E994D8 /* WorkoutLogs.framework */; };
 		9D8747FC292A539000E994D8 /* WorkoutLogsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8747FB292A539000E994D8 /* WorkoutLogsTests.swift */; };
 		9D8747FD292A539000E994D8 /* WorkoutLogs.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D8747F1292A539000E994D8 /* WorkoutLogs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D87480D292A53F600E994D8 /* WorkoutLogsSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D87480C292A53F600E994D8 /* WorkoutLogsSnapshotTests.swift */; };
+		9D87480E292A53F600E994D8 /* WorkoutLogs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8747EE292A539000E994D8 /* WorkoutLogs.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		9D8747F8292A539000E994D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D8747E5292A539000E994D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D8747ED292A539000E994D8;
+			remoteInfo = WorkoutLogs;
+		};
+		9D87480F292A53F600E994D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9D8747E5292A539000E994D8 /* Project object */;
 			proxyType = 1;
@@ -27,6 +36,8 @@
 		9D8747F1292A539000E994D8 /* WorkoutLogs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorkoutLogs.h; sourceTree = "<group>"; };
 		9D8747F6292A539000E994D8 /* WorkoutLogsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkoutLogsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8747FB292A539000E994D8 /* WorkoutLogsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogsTests.swift; sourceTree = "<group>"; };
+		9D87480A292A53F600E994D8 /* WorkoutLogsSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkoutLogsSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D87480C292A53F600E994D8 /* WorkoutLogsSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogsSnapshotTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +56,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9D874807292A53F600E994D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D87480E292A53F600E994D8 /* WorkoutLogs.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -53,6 +72,7 @@
 			children = (
 				9D8747F0292A539000E994D8 /* WorkoutLogs */,
 				9D8747FA292A539000E994D8 /* WorkoutLogsTests */,
+				9D87480B292A53F600E994D8 /* WorkoutLogsSnapshotTests */,
 				9D8747EF292A539000E994D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +82,7 @@
 			children = (
 				9D8747EE292A539000E994D8 /* WorkoutLogs.framework */,
 				9D8747F6292A539000E994D8 /* WorkoutLogsTests.xctest */,
+				9D87480A292A53F600E994D8 /* WorkoutLogsSnapshotTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +101,14 @@
 				9D8747FB292A539000E994D8 /* WorkoutLogsTests.swift */,
 			);
 			path = WorkoutLogsTests;
+			sourceTree = "<group>";
+		};
+		9D87480B292A53F600E994D8 /* WorkoutLogsSnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D87480C292A53F600E994D8 /* WorkoutLogsSnapshotTests.swift */,
+			);
+			path = WorkoutLogsSnapshotTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +161,24 @@
 			productReference = 9D8747F6292A539000E994D8 /* WorkoutLogsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		9D874809292A53F600E994D8 /* WorkoutLogsSnapshotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D874811292A53F600E994D8 /* Build configuration list for PBXNativeTarget "WorkoutLogsSnapshotTests" */;
+			buildPhases = (
+				9D874806292A53F600E994D8 /* Sources */,
+				9D874807292A53F600E994D8 /* Frameworks */,
+				9D874808292A53F600E994D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D874810292A53F600E994D8 /* PBXTargetDependency */,
+			);
+			name = WorkoutLogsSnapshotTests;
+			productName = WorkoutLogsSnapshotTests;
+			productReference = 9D87480A292A53F600E994D8 /* WorkoutLogsSnapshotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -146,6 +193,9 @@
 						CreatedOnToolsVersion = 14.0.1;
 					};
 					9D8747F5292A539000E994D8 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					9D874809292A53F600E994D8 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
 				};
@@ -165,6 +215,7 @@
 			targets = (
 				9D8747ED292A539000E994D8 /* WorkoutLogs */,
 				9D8747F5292A539000E994D8 /* WorkoutLogsTests */,
+				9D874809292A53F600E994D8 /* WorkoutLogsSnapshotTests */,
 			);
 		};
 /* End PBXProject section */
@@ -178,6 +229,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9D8747F4292A539000E994D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D874808292A53F600E994D8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -202,6 +260,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9D874806292A53F600E994D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D87480D292A53F600E994D8 /* WorkoutLogsSnapshotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -209,6 +275,11 @@
 			isa = PBXTargetDependency;
 			target = 9D8747ED292A539000E994D8 /* WorkoutLogs */;
 			targetProxy = 9D8747F8292A539000E994D8 /* PBXContainerItemProxy */;
+		};
+		9D874810292A53F600E994D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D8747ED292A539000E994D8 /* WorkoutLogs */;
+			targetProxy = 9D87480F292A53F600E994D8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -421,6 +492,38 @@
 			};
 			name = Release;
 		};
+		9D874812292A53F600E994D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9JVYUSJU3D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marekloose.WorkoutLogsSnapshotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D874813292A53F600E994D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9JVYUSJU3D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marekloose.WorkoutLogsSnapshotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -447,6 +550,15 @@
 			buildConfigurations = (
 				9D874804292A539000E994D8 /* Debug */,
 				9D874805292A539000E994D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D874811292A53F600E994D8 /* Build configuration list for PBXNativeTarget "WorkoutLogsSnapshotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D874812292A53F600E994D8 /* Debug */,
+				9D874813292A53F600E994D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
