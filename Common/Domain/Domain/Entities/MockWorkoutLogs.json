@@ -1,0 +1,27 @@
+[
+  {
+    "goal_duration": 100,
+    "actualDuration": 60,
+    "timestamp": 1668519945
+  },
+  {
+    "goal_duration": 50,
+    "actualDuration": 70,
+    "timestamp": 1668692745
+  },
+  {
+    "goal_duration": 60,
+    "actualDuration": 60,
+    "timestamp": 1668779145
+  },
+  {
+    "goal_duration": 40,
+    "actualDuration": 70,
+    "timestamp": 1668951945
+  },
+  {
+    "goal_duration": 20,
+    "actualDuration": 100,
+    "timestamp": 1669124745
+  }
+]

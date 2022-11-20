@@ -10,7 +10,7 @@
 		70ED96FB0874FB9B11096AAC /* Pods_Infrastructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 464C8ABEB9A4E4DFAA6FAEB7 /* Pods_Infrastructure.framework */; };
 		9D107E2A291FC53700BC5AFE /* Infrastructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D107E21291FC53600BC5AFE /* Infrastructure.framework */; };
 		9D107E2F291FC53700BC5AFE /* InfrastructureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D107E2E291FC53700BC5AFE /* InfrastructureTests.swift */; };
-		9D107E30291FC53700BC5AFE /* Infrastructure.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D107E24291FC53600BC5AFE /* Infrastructure.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D15AEDA292A6E9800400444 /* JsonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15AED9292A6E9800400444 /* JsonService.swift */; };
 		AE23665A14CE1B30BDDBA027 /* Pods_InfrastructureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5699C8EB0DA031C890E680 /* Pods_InfrastructureTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,9 +29,9 @@
 		464C8ABEB9A4E4DFAA6FAEB7 /* Pods_Infrastructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infrastructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5699C8EB0DA031C890E680 /* Pods_InfrastructureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InfrastructureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D107E21291FC53600BC5AFE /* Infrastructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Infrastructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D107E24291FC53600BC5AFE /* Infrastructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Infrastructure.h; sourceTree = "<group>"; };
 		9D107E29291FC53700BC5AFE /* InfrastructureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfrastructureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D107E2E291FC53700BC5AFE /* InfrastructureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfrastructureTests.swift; sourceTree = "<group>"; };
+		9D15AED9292A6E9800400444 /* JsonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonService.swift; sourceTree = "<group>"; };
 		BEEE560AD67961C737538183 /* Pods-InfrastructureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfrastructureTests.debug.xcconfig"; path = "Target Support Files/Pods-InfrastructureTests/Pods-InfrastructureTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C174791CB3AB5EC5771F4009 /* Pods-Infrastructure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infrastructure.debug.xcconfig"; path = "Target Support Files/Pods-Infrastructure/Pods-Infrastructure.debug.xcconfig"; sourceTree = "<group>"; };
 		E70EFC45227BF536DFC2A38A /* Pods-InfrastructureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfrastructureTests.release.xcconfig"; path = "Target Support Files/Pods-InfrastructureTests/Pods-InfrastructureTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 		9D107E23291FC53600BC5AFE /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
-				9D107E24291FC53600BC5AFE /* Infrastructure.h */,
+				9D15AED8292A6E6800400444 /* Services */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -101,6 +101,14 @@
 				9D107E2E291FC53700BC5AFE /* InfrastructureTests.swift */,
 			);
 			path = InfrastructureTests;
+			sourceTree = "<group>";
+		};
+		9D15AED8292A6E6800400444 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9D15AED9292A6E9800400444 /* JsonService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		D65900E888E93FAE90D1EE31 /* Pods */ = {
@@ -122,7 +130,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D107E30291FC53700BC5AFE /* Infrastructure.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +186,7 @@
 				TargetAttributes = {
 					9D107E20291FC53600BC5AFE = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 					};
 					9D107E28291FC53700BC5AFE = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -273,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D15AEDA292A6E9800400444 /* JsonService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C174791CB3AB5EC5771F4009 /* Pods-Infrastructure.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -439,6 +449,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2AAD9C2152AAF2B6BE24E0DB /* Pods-Infrastructure.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -477,6 +489,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BEEE560AD67961C737538183 /* Pods-InfrastructureTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9JVYUSJU3D;
@@ -494,6 +507,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E70EFC45227BF536DFC2A38A /* Pods-InfrastructureTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9JVYUSJU3D;
