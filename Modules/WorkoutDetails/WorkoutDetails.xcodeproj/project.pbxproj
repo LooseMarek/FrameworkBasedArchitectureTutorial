@@ -8,21 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		946A9D47F5CE66643256941C /* Pods_WorkoutDetailsSnapshotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C402CEEB30EC9F4F6D472E0A /* Pods_WorkoutDetailsSnapshotTests.framework */; };
+		9D2447A029328620009127AA /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D24479F29328620009127AA /* Domain.framework */; };
+		9D2447A129328620009127AA /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D24479F29328620009127AA /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9D2447A429328C8F009127AA /* WorkoutDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2447A329328C8F009127AA /* WorkoutDetails.swift */; };
+		9D2447A629328CBE009127AA /* WorkoutDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2447A529328CBE009127AA /* WorkoutDetailsViewModel.swift */; };
+		9D2447A829328CE2009127AA /* WorkoutDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2447A729328CE2009127AA /* WorkoutDetailsInteractor.swift */; };
+		9D2447AA29328D0C009127AA /* WorkoutDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2447A929328D0C009127AA /* WorkoutDetailsPresenter.swift */; };
+		9D416A44293253B100164219 /* WorkoutDetails.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D874831292A554C00E994D8 /* WorkoutDetails.framework */; platformFilter = ios; };
+		9D416A45293253B100164219 /* WorkoutDetails.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D874831292A554C00E994D8 /* WorkoutDetails.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9D416A4D2932543300164219 /* WorkoutDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D416A4C2932543300164219 /* WorkoutDetailsView.swift */; };
 		9D87483A292A554C00E994D8 /* WorkoutDetails.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D874831292A554C00E994D8 /* WorkoutDetails.framework */; };
 		9D87483F292A554C00E994D8 /* WorkoutDetailsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D87483E292A554C00E994D8 /* WorkoutDetailsTests.swift */; };
-		9D874840292A554C00E994D8 /* WorkoutDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D874834292A554C00E994D8 /* WorkoutDetails.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D874850292A558C00E994D8 /* WorkoutDetailsSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D87484F292A558C00E994D8 /* WorkoutDetailsSnapshotTests.swift */; };
 		9D874851292A558C00E994D8 /* WorkoutDetails.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D874831292A554C00E994D8 /* WorkoutDetails.framework */; platformFilter = ios; };
 		9D87485E292A55B400E994D8 /* WorkoutDetailsDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D87485D292A55B400E994D8 /* WorkoutDetailsDemoApp.swift */; };
-		9D874860292A55B400E994D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D87485F292A55B400E994D8 /* ContentView.swift */; };
 		9D874862292A55B500E994D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D874861292A55B500E994D8 /* Assets.xcassets */; };
 		9D874866292A55B500E994D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D874865292A55B500E994D8 /* Preview Assets.xcassets */; };
+		9DDCB1F42932AB8B0085985D /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDCB1F32932AB8B0085985D /* CircularProgressView.swift */; };
 		AF820DCB319460BA0CF47A8A /* Pods_WorkoutDetailsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919E3C9C61C6DFFA1BEDAA84 /* Pods_WorkoutDetailsTests.framework */; };
 		B1A6683E2DA42EC4213B0CB5 /* Pods_WorkoutDetails.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCEB09FB29378FC811DEE0C /* Pods_WorkoutDetails.framework */; };
 		BB8F6F820E5DAB1FFCAF72A9 /* Pods_WorkoutDetailsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70188F255FE4BE0E91B7D72B /* Pods_WorkoutDetailsDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9D416A46293253B200164219 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D874828292A554C00E994D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D874830292A554C00E994D8;
+			remoteInfo = WorkoutDetails;
+		};
 		9D87483B292A554C00E994D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9D874828292A554C00E994D8 /* Project object */;
@@ -39,23 +54,52 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9D2447A229328621009127AA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9D2447A129328620009127AA /* Domain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D416A48293253B200164219 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9D416A45293253B100164219 /* WorkoutDetails.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		182BC9A806B2B402A05068E7 /* Pods-WorkoutDetailsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutDetailsDemo.release.xcconfig"; path = "Target Support Files/Pods-WorkoutDetailsDemo/Pods-WorkoutDetailsDemo.release.xcconfig"; sourceTree = "<group>"; };
 		576ED7A7FE6CE5A24C7C882D /* Pods-WorkoutDetailsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutDetailsTests.release.xcconfig"; path = "Target Support Files/Pods-WorkoutDetailsTests/Pods-WorkoutDetailsTests.release.xcconfig"; sourceTree = "<group>"; };
 		70188F255FE4BE0E91B7D72B /* Pods_WorkoutDetailsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkoutDetailsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		919E3C9C61C6DFFA1BEDAA84 /* Pods_WorkoutDetailsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkoutDetailsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D24479F29328620009127AA /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D2447A329328C8F009127AA /* WorkoutDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetails.swift; sourceTree = "<group>"; };
+		9D2447A529328CBE009127AA /* WorkoutDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailsViewModel.swift; sourceTree = "<group>"; };
+		9D2447A729328CE2009127AA /* WorkoutDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailsInteractor.swift; sourceTree = "<group>"; };
+		9D2447A929328D0C009127AA /* WorkoutDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailsPresenter.swift; sourceTree = "<group>"; };
+		9D416A4C2932543300164219 /* WorkoutDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailsView.swift; sourceTree = "<group>"; };
 		9D874831292A554C00E994D8 /* WorkoutDetails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WorkoutDetails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D874834292A554C00E994D8 /* WorkoutDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorkoutDetails.h; sourceTree = "<group>"; };
 		9D874839292A554C00E994D8 /* WorkoutDetailsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkoutDetailsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D87483E292A554C00E994D8 /* WorkoutDetailsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailsTests.swift; sourceTree = "<group>"; };
 		9D87484D292A558C00E994D8 /* WorkoutDetailsSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkoutDetailsSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D87484F292A558C00E994D8 /* WorkoutDetailsSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailsSnapshotTests.swift; sourceTree = "<group>"; };
 		9D87485B292A55B300E994D8 /* WorkoutDetailsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutDetailsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D87485D292A55B400E994D8 /* WorkoutDetailsDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailsDemoApp.swift; sourceTree = "<group>"; };
-		9D87485F292A55B400E994D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D874861292A55B500E994D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9D874863292A55B500E994D8 /* WorkoutDetailsDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WorkoutDetailsDemo.entitlements; sourceTree = "<group>"; };
 		9D874865292A55B500E994D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9DDCB1F32932AB8B0085985D /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		AC0B0F528335045CA90A02F9 /* Pods-WorkoutDetailsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutDetailsTests.debug.xcconfig"; path = "Target Support Files/Pods-WorkoutDetailsTests/Pods-WorkoutDetailsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B7317AAE5C972AAB907D40D6 /* Pods-WorkoutDetails.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutDetails.release.xcconfig"; path = "Target Support Files/Pods-WorkoutDetails/Pods-WorkoutDetails.release.xcconfig"; sourceTree = "<group>"; };
 		BA84FDA66226727438433480 /* Pods-WorkoutDetailsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutDetailsDemo.debug.xcconfig"; path = "Target Support Files/Pods-WorkoutDetailsDemo/Pods-WorkoutDetailsDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D2447A029328620009127AA /* Domain.framework in Frameworks */,
 				B1A6683E2DA42EC4213B0CB5 /* Pods_WorkoutDetails.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB8F6F820E5DAB1FFCAF72A9 /* Pods_WorkoutDetailsDemo.framework in Frameworks */,
+				9D416A44293253B100164219 /* WorkoutDetails.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,12 +169,51 @@
 		8ED37431DD2ADEA582AEF8E1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D24479F29328620009127AA /* Domain.framework */,
 				EFCEB09FB29378FC811DEE0C /* Pods_WorkoutDetails.framework */,
 				70188F255FE4BE0E91B7D72B /* Pods_WorkoutDetailsDemo.framework */,
 				C402CEEB30EC9F4F6D472E0A /* Pods_WorkoutDetailsSnapshotTests.framework */,
 				919E3C9C61C6DFFA1BEDAA84 /* Pods_WorkoutDetailsTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D416A432932537100164219 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9D874864292A55B500E994D8 /* Preview Content */,
+				9D874861292A55B500E994D8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9D416A49293253F500164219 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				9DDCB1F22932AB810085985D /* Views */,
+				9D416A4A293253FB00164219 /* Scenes */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		9D416A4A293253FB00164219 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9D416A4B2932540100164219 /* WorkoutDetails */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9D416A4B2932540100164219 /* WorkoutDetails */ = {
+			isa = PBXGroup;
+			children = (
+				9D2447A329328C8F009127AA /* WorkoutDetails.swift */,
+				9D416A4C2932543300164219 /* WorkoutDetailsView.swift */,
+				9D2447A529328CBE009127AA /* WorkoutDetailsViewModel.swift */,
+				9D2447A729328CE2009127AA /* WorkoutDetailsInteractor.swift */,
+				9D2447A929328D0C009127AA /* WorkoutDetailsPresenter.swift */,
+			);
+			path = WorkoutDetails;
 			sourceTree = "<group>";
 		};
 		9D874827292A554C00E994D8 = {
@@ -158,7 +243,7 @@
 		9D874833292A554C00E994D8 /* WorkoutDetails */ = {
 			isa = PBXGroup;
 			children = (
-				9D874834292A554C00E994D8 /* WorkoutDetails.h */,
+				9D416A49293253F500164219 /* Presentation */,
 			);
 			path = WorkoutDetails;
 			sourceTree = "<group>";
@@ -182,11 +267,8 @@
 		9D87485C292A55B400E994D8 /* WorkoutDetailsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9D416A432932537100164219 /* Resources */,
 				9D87485D292A55B400E994D8 /* WorkoutDetailsDemoApp.swift */,
-				9D87485F292A55B400E994D8 /* ContentView.swift */,
-				9D874861292A55B500E994D8 /* Assets.xcassets */,
-				9D874863292A55B500E994D8 /* WorkoutDetailsDemo.entitlements */,
-				9D874864292A55B500E994D8 /* Preview Content */,
 			);
 			path = WorkoutDetailsDemo;
 			sourceTree = "<group>";
@@ -199,6 +281,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9DDCB1F22932AB810085985D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9DDCB1F32932AB8B0085985D /* CircularProgressView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -206,7 +296,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D874840292A554C00E994D8 /* WorkoutDetails.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +311,7 @@
 				9D87482D292A554C00E994D8 /* Sources */,
 				9D87482E292A554C00E994D8 /* Frameworks */,
 				9D87482F292A554C00E994D8 /* Resources */,
+				9D2447A229328621009127AA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -279,10 +369,12 @@
 				9D874857292A55B300E994D8 /* Sources */,
 				9D874858292A55B300E994D8 /* Frameworks */,
 				9D874859292A55B300E994D8 /* Resources */,
+				9D416A48293253B200164219 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9D416A47293253B200164219 /* PBXTargetDependency */,
 			);
 			name = WorkoutDetailsDemo;
 			productName = WorkoutDetailsDemo;
@@ -301,6 +393,7 @@
 				TargetAttributes = {
 					9D874830292A554C00E994D8 = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 					};
 					9D874838292A554C00E994D8 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -480,6 +573,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D2447AA29328D0C009127AA /* WorkoutDetailsPresenter.swift in Sources */,
+				9D2447A629328CBE009127AA /* WorkoutDetailsViewModel.swift in Sources */,
+				9D2447A829328CE2009127AA /* WorkoutDetailsInteractor.swift in Sources */,
+				9D2447A429328C8F009127AA /* WorkoutDetails.swift in Sources */,
+				9DDCB1F42932AB8B0085985D /* CircularProgressView.swift in Sources */,
+				9D416A4D2932543300164219 /* WorkoutDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,7 +602,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D874860292A55B400E994D8 /* ContentView.swift in Sources */,
 				9D87485E292A55B400E994D8 /* WorkoutDetailsDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +609,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9D416A47293253B200164219 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 9D874830292A554C00E994D8 /* WorkoutDetails */;
+			targetProxy = 9D416A46293253B200164219 /* PBXContainerItemProxy */;
+		};
 		9D87483C292A554C00E994D8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9D874830292A554C00E994D8 /* WorkoutDetails */;
@@ -649,6 +753,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C3FBE325DFBEF80661F4EE38 /* Pods-WorkoutDetails.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -669,6 +774,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -678,6 +784,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B7317AAE5C972AAB907D40D6 /* Pods-WorkoutDetails.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -707,6 +814,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AC0B0F528335045CA90A02F9 /* Pods-WorkoutDetailsTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9JVYUSJU3D;
@@ -724,6 +832,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 576ED7A7FE6CE5A24C7C882D /* Pods-WorkoutDetailsTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9JVYUSJU3D;
@@ -741,6 +850,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D44E1E324AEA827C09BD293E /* Pods-WorkoutDetailsSnapshotTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9JVYUSJU3D;
@@ -762,6 +872,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE0371996BB1C209B8500E87 /* Pods-WorkoutDetailsSnapshotTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9JVYUSJU3D;
@@ -783,12 +894,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BA84FDA66226727438433480 /* Pods-WorkoutDetailsDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WorkoutDetailsDemo/WorkoutDetailsDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WorkoutDetailsDemo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "WorkoutDetailsDemo/Resources/Preview\\ Content/Preview\\ Assets.xcassets";
 				DEVELOPMENT_TEAM = 9JVYUSJU3D;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -822,12 +933,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 182BC9A806B2B402A05068E7 /* Pods-WorkoutDetailsDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WorkoutDetailsDemo/WorkoutDetailsDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WorkoutDetailsDemo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "WorkoutDetailsDemo/Resources/Preview\\ Content/Preview\\ Assets.xcassets";
 				DEVELOPMENT_TEAM = 9JVYUSJU3D;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;

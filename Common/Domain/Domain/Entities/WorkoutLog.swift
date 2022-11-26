@@ -13,4 +13,10 @@ public struct WorkoutLog: Decodable {
     public var actualDuration: Int
     public var timestamp: Int
     
+    public init(goalDuration: Int, actualDuration: Int, timestamp: Int) {
+        self.goalDuration = goalDuration
+        self.actualDuration = actualDuration
+        self.timestamp = timestamp
+    }
+    
 }
