@@ -12,11 +12,16 @@ import Domain
 @main
 struct WorkoutDetailsDemoApp: App {
     
-    var workoutLog = WorkoutLog(goalDuration: 100, actualDuration: 43, timestamp: 1668779145)
+    var workoutDetailsRouter = WorkoutDetailsRouter()
+    
+    init() {
+        let workoutLog = WorkoutLog(goalDuration: 100, actualDuration: 43, timestamp: 1668779145)
+        workoutDetailsRouter.configure(workoutLog: workoutLog)
+    }
     
     var body: some Scene {
         WindowGroup {
-            WorkoutDetailsView().configureView(with: workoutLog)
+            workoutDetailsRouter.start()
         }
     }
     

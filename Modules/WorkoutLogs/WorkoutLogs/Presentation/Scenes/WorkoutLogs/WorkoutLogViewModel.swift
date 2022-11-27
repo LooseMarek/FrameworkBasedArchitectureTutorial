@@ -10,6 +10,8 @@ import Domain
 
 public protocol WorkoutLogViewModelProtocol {
     
+    var workoutLog: WorkoutLog { get }
+    
     var goalDurationLabel: String { get }
     var actualDurationLabel: String { get }
     var dateLabel: String { get }
@@ -18,7 +20,7 @@ public protocol WorkoutLogViewModelProtocol {
 
 public final class WorkoutLogViewModel {
     
-    private let workoutLog: WorkoutLog
+    public let workoutLog: WorkoutLog
     
     public init(with workoutLog: WorkoutLog) {
         self.workoutLog = workoutLog

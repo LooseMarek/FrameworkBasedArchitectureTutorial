@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4CBA6B65FF0C7502BE9BB8DB /* Pods_WorkoutLogsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E9053D9E7B34E082F2B61 /* Pods_WorkoutLogsDemo.framework */; };
 		9699E9DD47C2176DF03A5AAE /* Pods_WorkoutLogsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F8ED0B9B4B739F9508A05CF /* Pods_WorkoutLogsTests.framework */; };
+		9D0AA70E2933CAFF00373CF1 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0AA70D2933CAFF00373CF1 /* Presentation.framework */; };
+		9D0AA70F2933CAFF00373CF1 /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0AA70D2933CAFF00373CF1 /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9D0AA7132933CC8200373CF1 /* WorkoutLogsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0AA7122933CC8200373CF1 /* WorkoutLogsRouter.swift */; };
 		9D15AEF1292A955600400444 /* WorkoutLogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15AEF0292A955600400444 /* WorkoutLogsViewController.swift */; };
 		9D15AEF7292A95DD00400444 /* WorkoutLogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15AEF6292A95DD00400444 /* WorkoutLogsViewModel.swift */; };
 		9D15AEFC292A983300400444 /* WorkoutLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15AEFB292A983300400444 /* WorkoutLogViewModel.swift */; };
@@ -72,6 +75,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				9D15AF17292AC49100400444 /* Domain.framework in Embed Frameworks */,
+				9D0AA70F2933CAFF00373CF1 /* Presentation.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +91,9 @@
 		4C065AD5594313DF6D9444D3 /* Pods-WorkoutLogsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutLogsTests.debug.xcconfig"; path = "Target Support Files/Pods-WorkoutLogsTests/Pods-WorkoutLogsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F8ED0B9B4B739F9508A05CF /* Pods_WorkoutLogsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkoutLogsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96AD187F1F6ACCA3E902E6FB /* Pods_WorkoutLogsSnapshotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkoutLogsSnapshotTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D0AA7052933B87000373CF1 /* WorkoutDetails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WorkoutDetails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D0AA70D2933CAFF00373CF1 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D0AA7122933CC8200373CF1 /* WorkoutLogsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogsRouter.swift; sourceTree = "<group>"; };
 		9D15AEF0292A955600400444 /* WorkoutLogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogsViewController.swift; sourceTree = "<group>"; };
 		9D15AEF6292A95DD00400444 /* WorkoutLogsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogsViewModel.swift; sourceTree = "<group>"; };
 		9D15AEFB292A983300400444 /* WorkoutLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogViewModel.swift; sourceTree = "<group>"; };
@@ -115,6 +122,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D15AF16292AC49100400444 /* Domain.framework in Frameworks */,
+				9D0AA70E2933CAFF00373CF1 /* Presentation.framework in Frameworks */,
 				A1E66FB7C22C7B192A14FD1A /* Pods_WorkoutLogs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,6 +176,8 @@
 		99A0A9AAB88E0A7A9ED44FC7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D0AA70D2933CAFF00373CF1 /* Presentation.framework */,
+				9D0AA7052933B87000373CF1 /* WorkoutDetails.framework */,
 				9D15AF15292AC49000400444 /* Domain.framework */,
 				9D15AF12292AC47500400444 /* Domain.framework */,
 				10DE6CAE8C419AAA6B744435 /* Pods_WorkoutLogs.framework */,
@@ -198,6 +208,7 @@
 		9D15AEEF292A951900400444 /* WorkoutLogs */ = {
 			isa = PBXGroup;
 			children = (
+				9D0AA7122933CC8200373CF1 /* WorkoutLogsRouter.swift */,
 				9D15AEF0292A955600400444 /* WorkoutLogsViewController.swift */,
 				9D15AEF6292A95DD00400444 /* WorkoutLogsViewModel.swift */,
 				9D15AEFB292A983300400444 /* WorkoutLogViewModel.swift */,
@@ -579,6 +590,7 @@
 			files = (
 				9D15AEF1292A955600400444 /* WorkoutLogsViewController.swift in Sources */,
 				9D15AEF7292A95DD00400444 /* WorkoutLogsViewModel.swift in Sources */,
+				9D0AA7132933CC8200373CF1 /* WorkoutLogsRouter.swift in Sources */,
 				9D15AF11292AAC6000400444 /* WorkoutLogCell.swift in Sources */,
 				9D15AEFC292A983300400444 /* WorkoutLogViewModel.swift in Sources */,
 			);

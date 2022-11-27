@@ -38,15 +38,20 @@ public struct WorkoutDetailsView: View {
 
 public extension WorkoutDetailsView {
     
-    func configureView(with workoutLog: WorkoutLog? = nil) -> some View {
+    func configureView() -> Self {
         var view = self
         var interactor: WorkoutDetailsInteractorProtocol = WorkoutDetailsInteractor()
         var presenter: WorkoutDetailsPresenterProtocol = WorkoutDetailsPresenter()
         view.interactor = interactor
         interactor.presenter = presenter
-        interactor.workoutLog = workoutLog
         presenter.view = view
 
+        return view
+    }
+    
+    func configure(workoutLog: WorkoutLog) -> Self {
+        var view = self
+        view.interactor?.workoutLog = workoutLog
         return view
     }
     

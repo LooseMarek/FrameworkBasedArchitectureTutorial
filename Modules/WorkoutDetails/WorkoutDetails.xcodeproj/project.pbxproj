@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		946A9D47F5CE66643256941C /* Pods_WorkoutDetailsSnapshotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C402CEEB30EC9F4F6D472E0A /* Pods_WorkoutDetailsSnapshotTests.framework */; };
+		9D0AA7152933E12C00373CF1 /* WorkoutDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0AA7142933E12C00373CF1 /* WorkoutDetailsRouter.swift */; };
 		9D2447A029328620009127AA /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D24479F29328620009127AA /* Domain.framework */; };
 		9D2447A129328620009127AA /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D24479F29328620009127AA /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D2447A429328C8F009127AA /* WorkoutDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2447A329328C8F009127AA /* WorkoutDetails.swift */; };
@@ -84,6 +85,7 @@
 		576ED7A7FE6CE5A24C7C882D /* Pods-WorkoutDetailsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutDetailsTests.release.xcconfig"; path = "Target Support Files/Pods-WorkoutDetailsTests/Pods-WorkoutDetailsTests.release.xcconfig"; sourceTree = "<group>"; };
 		70188F255FE4BE0E91B7D72B /* Pods_WorkoutDetailsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkoutDetailsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		919E3C9C61C6DFFA1BEDAA84 /* Pods_WorkoutDetailsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkoutDetailsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D0AA7142933E12C00373CF1 /* WorkoutDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailsRouter.swift; sourceTree = "<group>"; };
 		9D24479F29328620009127AA /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2447A329328C8F009127AA /* WorkoutDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetails.swift; sourceTree = "<group>"; };
 		9D2447A529328CBE009127AA /* WorkoutDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailsViewModel.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				9D2447A329328C8F009127AA /* WorkoutDetails.swift */,
+				9D0AA7142933E12C00373CF1 /* WorkoutDetailsRouter.swift */,
 				9D416A4C2932543300164219 /* WorkoutDetailsView.swift */,
 				9D2447A529328CBE009127AA /* WorkoutDetailsViewModel.swift */,
 				9D2447A729328CE2009127AA /* WorkoutDetailsInteractor.swift */,
@@ -577,6 +580,7 @@
 				9D2447A629328CBE009127AA /* WorkoutDetailsViewModel.swift in Sources */,
 				9D2447A829328CE2009127AA /* WorkoutDetailsInteractor.swift in Sources */,
 				9D2447A429328C8F009127AA /* WorkoutDetails.swift in Sources */,
+				9D0AA7152933E12C00373CF1 /* WorkoutDetailsRouter.swift in Sources */,
 				9DDCB1F42932AB8B0085985D /* CircularProgressView.swift in Sources */,
 				9D416A4D2932543300164219 /* WorkoutDetailsView.swift in Sources */,
 			);

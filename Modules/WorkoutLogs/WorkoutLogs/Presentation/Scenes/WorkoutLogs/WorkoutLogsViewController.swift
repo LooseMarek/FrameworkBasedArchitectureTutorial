@@ -7,15 +7,28 @@
 
 import UIKit
 import SwiftUI
+import Domain
+
+public protocol WorkoutLogsViewControllerDelegate: AnyObject {
+    
+    func onShowDetails(for workoutLog: WorkoutLog, navigationController: UINavigationController?)
+    
+}
 
 public struct WorkoutLogsView: UIViewControllerRepresentable {
     
+    private let delegate: WorkoutLogsViewControllerDelegate?
+    
     public typealias UIViewControllerType = WorkoutLogsViewController
     
-    public init() {}
+    public init(delegate: WorkoutLogsViewControllerDelegate? = nil) {
+        self.delegate = delegate
+    }
 
     public func makeUIViewController(context: Context) -> WorkoutLogsViewController {
-        WorkoutLogsViewController(with: WorkoutLogsViewModel())
+        let workoutLogsViewController = WorkoutLogsViewController(with: WorkoutLogsViewModel())
+        workoutLogsViewController.delegate = delegate
+        return workoutLogsViewController
     }
 
     public func updateUIViewController(_ uiViewController: WorkoutLogsViewController, context: Context) {}
@@ -30,6 +43,8 @@ public final class WorkoutLogsViewController: UIViewController {
     private(set) var workoutLogViewModels = [WorkoutLogViewModelProtocol]()
     
     private let viewModel: WorkoutLogsViewModelProtocol
+    
+    public weak var delegate: WorkoutLogsViewControllerDelegate?
     
     public init(with viewModel: WorkoutLogsViewModelProtocol) {
         self.viewModel = viewModel
@@ -59,6 +74,7 @@ public final class WorkoutLogsViewController: UIViewController {
     
     func setDelegates() {
         tableView.dataSource = self
+        tableView.delegate = self
     }
     
     func setSubviews() {
@@ -115,3 +131,11 @@ extension WorkoutLogsViewController: UITableViewDataSource {
     
 }
 
+extension WorkoutLogsViewController: UITableViewDelegate {
+    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let viewModel = workoutLogViewModels[indexPath.row]
+        delegate?.onShowDetails(for: viewModel.workoutLog, navigationController: navigationController)
+    }
+    
+}

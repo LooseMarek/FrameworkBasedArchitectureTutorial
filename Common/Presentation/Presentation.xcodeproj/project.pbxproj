@@ -10,9 +10,9 @@
 		0FD274E0D28F47293C2C4586 /* Pods_PresentationSnapshotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF80E4F3883E5123FDAA34F /* Pods_PresentationSnapshotTests.framework */; };
 		643618F8F325CE155A369D60 /* Pods_Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2A7DC2D56D1C17E163DBB1A /* Pods_Presentation.framework */; };
 		6BBC473DB455F424A913D485 /* Pods_PresentationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD2AB60F45E243AA50BE0B8 /* Pods_PresentationTests.framework */; };
+		9D0AA7092933C92D00373CF1 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0AA7082933C92D00373CF1 /* RouterProtocol.swift */; };
 		9DB1349A291FC6C30096774B /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB13491291FC6C30096774B /* Presentation.framework */; };
 		9DB1349F291FC6C30096774B /* PresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB1349E291FC6C30096774B /* PresentationTests.swift */; };
-		9DB134A0291FC6C30096774B /* Presentation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DB13494291FC6C30096774B /* Presentation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9DB134B0291FC7610096774B /* PresentationSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB134AF291FC7610096774B /* PresentationSnapshotTests.swift */; };
 		9DB134B1291FC7610096774B /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB13491291FC6C30096774B /* Presentation.framework */; };
 /* End PBXBuildFile section */
@@ -41,8 +41,8 @@
 		5C267569487F458F2348B05F /* Pods-PresentationSnapshotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PresentationSnapshotTests.release.xcconfig"; path = "Target Support Files/Pods-PresentationSnapshotTests/Pods-PresentationSnapshotTests.release.xcconfig"; sourceTree = "<group>"; };
 		90335FF3DB41AF717E49EAD0 /* Pods-PresentationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PresentationTests.release.xcconfig"; path = "Target Support Files/Pods-PresentationTests/Pods-PresentationTests.release.xcconfig"; sourceTree = "<group>"; };
 		9CDE732D7A6265E0A4CE690C /* Pods-PresentationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PresentationTests.debug.xcconfig"; path = "Target Support Files/Pods-PresentationTests/Pods-PresentationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D0AA7082933C92D00373CF1 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
 		9DB13491291FC6C30096774B /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DB13494291FC6C30096774B /* Presentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Presentation.h; sourceTree = "<group>"; };
 		9DB13499291FC6C30096774B /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB1349E291FC6C30096774B /* PresentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationTests.swift; sourceTree = "<group>"; };
 		9DB134AD291FC7610096774B /* PresentationSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,7 +121,7 @@
 		9DB13493291FC6C30096774B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				9DB13494291FC6C30096774B /* Presentation.h */,
+				9D0AA7082933C92D00373CF1 /* RouterProtocol.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -159,7 +159,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DB134A0291FC6C30096774B /* Presentation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +235,7 @@
 				TargetAttributes = {
 					9DB13490291FC6C30096774B = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 					};
 					9DB13498291FC6C30096774B = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -380,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D0AA7092933C92D00373CF1 /* RouterProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,6 +540,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 241A6CD6E842952A030C1B2C /* Pods-Presentation.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -559,6 +561,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -568,6 +571,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4B2C020DA3EB339234EF6133 /* Pods-Presentation.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -597,6 +601,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9CDE732D7A6265E0A4CE690C /* Pods-PresentationTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9JVYUSJU3D;
@@ -614,6 +619,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 90335FF3DB41AF717E49EAD0 /* Pods-PresentationTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9JVYUSJU3D;
@@ -631,6 +637,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F6B4C88CE20873ED6CFD45C9 /* Pods-PresentationSnapshotTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9JVYUSJU3D;
@@ -648,6 +655,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5C267569487F458F2348B05F /* Pods-PresentationSnapshotTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9JVYUSJU3D;
