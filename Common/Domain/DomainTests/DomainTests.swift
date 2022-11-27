@@ -6,8 +6,9 @@
 //
 
 import XCTest
-@testable import Domain
 import Infrastructure
+@testable import InfrastructureMocks
+@testable import Domain
 
 final class DomainTests: XCTestCase {
 
@@ -21,5 +22,19 @@ final class DomainTests: XCTestCase {
         // Then
         XCTAssertEqual(result.count, 5)
     }
+    
+    func testMockFromStaticLibrary() throws {
+        // Given
+        let mockJsonService = MockJsonService()
+        mockJsonService.mockData = nil
+        let workoutLogLocalRepository: WorkoutLogLocalRepositoryProtocol = WorkoutLogLocalRepository(jsonService: mockJsonService)
+        
+        // When
+        let result = workoutLogLocalRepository.getAll()
+        
+        // Then
+        XCTAssertEqual(result.count, 0)
+    }
+
 
 }

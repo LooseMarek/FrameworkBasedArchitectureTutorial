@@ -12,6 +12,7 @@
 		9D15AEE4292A767300400444 /* Infrastructure.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D15AEE2292A767300400444 /* Infrastructure.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D15AEE8292A76CB00400444 /* WorkoutLogLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15AEE7292A76CB00400444 /* WorkoutLogLocalRepository.swift */; };
 		9D15AEEC292A8B7A00400444 /* MockWorkoutLogs.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D15AEEB292A8A9300400444 /* MockWorkoutLogs.json */; };
+		9D7FE34A2933F67F00B8DCF6 /* libInfrastructureMocks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7FE3492933F67F00B8DCF6 /* libInfrastructureMocks.a */; };
 		9DB13478291FC68F0096774B /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB1346F291FC68F0096774B /* Domain.framework */; };
 		9DB1347D291FC68F0096774B /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB1347C291FC68F0096774B /* DomainTests.swift */; };
 		AC9D92BB9A8F49CAABA1FBC0 /* Pods_DomainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E90D9F600521DDE4E88FCDC /* Pods_DomainTests.framework */; };
@@ -53,6 +54,8 @@
 		9D15AEE2292A767300400444 /* Infrastructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Infrastructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D15AEE7292A76CB00400444 /* WorkoutLogLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogLocalRepository.swift; sourceTree = "<group>"; };
 		9D15AEEB292A8A9300400444 /* MockWorkoutLogs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockWorkoutLogs.json; sourceTree = "<group>"; };
+		9D7FE3472933F62A00B8DCF6 /* libInfrastructureMocks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libInfrastructureMocks.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D7FE3492933F67F00B8DCF6 /* libInfrastructureMocks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libInfrastructureMocks.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB1346F291FC68F0096774B /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB13477291FC68F0096774B /* DomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB1347C291FC68F0096774B /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
@@ -72,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D7FE34A2933F67F00B8DCF6 /* libInfrastructureMocks.a in Frameworks */,
 				9DB13478291FC68F0096774B /* Domain.framework in Frameworks */,
 				AC9D92BB9A8F49CAABA1FBC0 /* Pods_DomainTests.framework in Frameworks */,
 			);
@@ -83,6 +87,8 @@
 		2C8AD1FA7CDE53E94F4C4881 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D7FE3492933F67F00B8DCF6 /* libInfrastructureMocks.a */,
+				9D7FE3472933F62A00B8DCF6 /* libInfrastructureMocks.a */,
 				9D15AEE2292A767300400444 /* Infrastructure.framework */,
 				4454301DDDE77DBDD00624E0 /* Pods_Domain.framework */,
 				6E90D9F600521DDE4E88FCDC /* Pods_DomainTests.framework */,

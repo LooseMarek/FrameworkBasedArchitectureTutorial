@@ -11,6 +11,7 @@
 		9D107E2A291FC53700BC5AFE /* Infrastructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D107E21291FC53600BC5AFE /* Infrastructure.framework */; };
 		9D107E2F291FC53700BC5AFE /* InfrastructureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D107E2E291FC53700BC5AFE /* InfrastructureTests.swift */; };
 		9D15AEDA292A6E9800400444 /* JsonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D15AED9292A6E9800400444 /* JsonService.swift */; };
+		9D7FE3402933F36700B8DCF6 /* MockJsonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7FE33F2933F36700B8DCF6 /* MockJsonService.swift */; };
 		AE23665A14CE1B30BDDBA027 /* Pods_InfrastructureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5699C8EB0DA031C890E680 /* Pods_InfrastructureTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,18 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9D7FE33B2933F36700B8DCF6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2AAD9C2152AAF2B6BE24E0DB /* Pods-Infrastructure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infrastructure.release.xcconfig"; path = "Target Support Files/Pods-Infrastructure/Pods-Infrastructure.release.xcconfig"; sourceTree = "<group>"; };
 		464C8ABEB9A4E4DFAA6FAEB7 /* Pods_Infrastructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infrastructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +45,8 @@
 		9D107E29291FC53700BC5AFE /* InfrastructureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfrastructureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D107E2E291FC53700BC5AFE /* InfrastructureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfrastructureTests.swift; sourceTree = "<group>"; };
 		9D15AED9292A6E9800400444 /* JsonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonService.swift; sourceTree = "<group>"; };
+		9D7FE33D2933F36700B8DCF6 /* libInfrastructureMocks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libInfrastructureMocks.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D7FE33F2933F36700B8DCF6 /* MockJsonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockJsonService.swift; sourceTree = "<group>"; };
 		BEEE560AD67961C737538183 /* Pods-InfrastructureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfrastructureTests.debug.xcconfig"; path = "Target Support Files/Pods-InfrastructureTests/Pods-InfrastructureTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C174791CB3AB5EC5771F4009 /* Pods-Infrastructure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infrastructure.debug.xcconfig"; path = "Target Support Files/Pods-Infrastructure/Pods-Infrastructure.debug.xcconfig"; sourceTree = "<group>"; };
 		E70EFC45227BF536DFC2A38A /* Pods-InfrastructureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfrastructureTests.release.xcconfig"; path = "Target Support Files/Pods-InfrastructureTests/Pods-InfrastructureTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -55,6 +70,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9D7FE33A2933F36700B8DCF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -72,6 +94,7 @@
 			children = (
 				9D107E23291FC53600BC5AFE /* Infrastructure */,
 				9D107E2D291FC53700BC5AFE /* InfrastructureTests */,
+				9D7FE33E2933F36700B8DCF6 /* InfrastructureMocks */,
 				9D107E22291FC53600BC5AFE /* Products */,
 				D65900E888E93FAE90D1EE31 /* Pods */,
 				601DDCDF0D507991F20E7A8B /* Frameworks */,
@@ -83,6 +106,7 @@
 			children = (
 				9D107E21291FC53600BC5AFE /* Infrastructure.framework */,
 				9D107E29291FC53700BC5AFE /* InfrastructureTests.xctest */,
+				9D7FE33D2933F36700B8DCF6 /* libInfrastructureMocks.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +133,14 @@
 				9D15AED9292A6E9800400444 /* JsonService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		9D7FE33E2933F36700B8DCF6 /* InfrastructureMocks */ = {
+			isa = PBXGroup;
+			children = (
+				9D7FE33F2933F36700B8DCF6 /* MockJsonService.swift */,
+			);
+			path = InfrastructureMocks;
 			sourceTree = "<group>";
 		};
 		D65900E888E93FAE90D1EE31 /* Pods */ = {
@@ -174,6 +206,23 @@
 			productReference = 9D107E29291FC53700BC5AFE /* InfrastructureTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		9D7FE33C2933F36700B8DCF6 /* InfrastructureMocks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D7FE3432933F36700B8DCF6 /* Build configuration list for PBXNativeTarget "InfrastructureMocks" */;
+			buildPhases = (
+				9D7FE3392933F36700B8DCF6 /* Sources */,
+				9D7FE33A2933F36700B8DCF6 /* Frameworks */,
+				9D7FE33B2933F36700B8DCF6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InfrastructureMocks;
+			productName = InfrastructureMocks;
+			productReference = 9D7FE33D2933F36700B8DCF6 /* libInfrastructureMocks.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -189,6 +238,9 @@
 						LastSwiftMigration = 1400;
 					};
 					9D107E28291FC53700BC5AFE = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					9D7FE33C2933F36700B8DCF6 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
 				};
@@ -207,6 +259,7 @@
 			projectRoot = "";
 			targets = (
 				9D107E20291FC53600BC5AFE /* Infrastructure */,
+				9D7FE33C2933F36700B8DCF6 /* InfrastructureMocks */,
 				9D107E28291FC53700BC5AFE /* InfrastructureTests */,
 			);
 		};
@@ -290,6 +343,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D107E2F291FC53700BC5AFE /* InfrastructureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7FE3392933F36700B8DCF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D7FE3402933F36700B8DCF6 /* MockJsonService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +582,32 @@
 			};
 			name = Release;
 		};
+		9D7FE3412933F36700B8DCF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JVYUSJU3D;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D7FE3422933F36700B8DCF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JVYUSJU3D;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -547,6 +634,15 @@
 			buildConfigurations = (
 				9D107E37291FC53700BC5AFE /* Debug */,
 				9D107E38291FC53700BC5AFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D7FE3432933F36700B8DCF6 /* Build configuration list for PBXNativeTarget "InfrastructureMocks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D7FE3412933F36700B8DCF6 /* Debug */,
+				9D7FE3422933F36700B8DCF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
